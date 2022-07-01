@@ -1,0 +1,30 @@
+body {
+    background: #ccc;
+}
+/*# representa o id que só pode ser usado um por pagina, o ponto no inicio representa uma classe*/
+#title, .subtitle, .post_title{
+    color: blue;
+}
+
+.post_title{
+    font-size: 16px;
+    font-style: italic;
+}
+
+/*Altera o tamanho de todas as imagens*/
+img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+.post {
+    /*cor de fundo */
+    background: #fff;
+    /*espaçamento entre o conteudo e a borda*/
+    padding: 10px;
+    /*borda ppx é a largura, solida e cor preto*/
+    border: 3px solid #000;
+    /*Espaçamento entre elementos*/
+    margin: 10px;
+}

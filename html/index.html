@@ -1,40 +1,75 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Guilherme Augusto Gonçalves Poscidônio</title>
-    </head>
-    <body>
-        <!-- Cabeçario da pagina ou po caeçario de parte dela-->
-       <header> 
-           <!-- usado para titulos nas paginas-->
-           <h1>Guilherme Augusto Gonçalves Poscidônio</h1>
-       </header>
-       <!--seção generica de conteudo como listas por exemplo-->
-       <section>
-           <header>
-               <h2>Posts</h2>
-           </header>
-           <!-- conteudo relevante da sua pagina-->
-           <article>
-               <h3>Post #1</h3>
-               <!--Paragrafo, textos densos, imagens, videos-->
-               <p> 
-                A área de exatas sempre me cativou, ao realizar um curso em Delphi no ensino médio me deparei com o desenvolvimento de software, que me despertou o brilho nos olhos. Logo após iniciei meus estudos como bacharel em ciência da computação, juntamente com o técnico em informática.
-Realizei quatro estágios, sendo eles dois obrigatórios e dois não obrigatórios, todos me agregaram muito conhecimento, cada um com suas peculiaridades, porém todos voltados para área de manutenção/suporte de software, hardware e atendimento ao cliente.
-Recebi uma oportunidade de trabalhar na instituição na qual me encontro até o momento, mesmo não sendo minha área de formação me dediquei a todos os cargos pelo qual passei dentro da empresa, com a realização de cursos, uma pós-graduação, sempre executei minhas funções, como acréscimo mesmo não sendo solicitado, auxiliava o setor de suporte TI, não perdendo assim meu vínculo com o setor. 
-Após cinco anos e sete meses recebi a oportunidade tão aguardada, ingressar na minha área de formação, mesmo não tendo experiência e com uma evasão muito significativa de colaboradores do setor aceitei este desafio e hoje cada vez mais engajado, estou buscando estudar para continuar agregando e trazendo cada vez mais resultados para empresa, consequentemente para minha carreira profissional.
-Clique para dar uma olha no meu perfil profissional no LINKEDIN --> <a href="https://www.linkedin.com/in/guilhermeposcidonio/" target="_blank">Aqui</a> 
-<!-- <a> utilizado como ancora para o quel vai ser apontado a referencia e o target _blank para abir em uma nova guia no navegador-->
-    <!-- mailto para email e quando clicar abre o app configurado na maquina de email ou o navegar o mesmo para telefone porem utiliza o telto-->
-    <a href="mailto:guilhermeposcidonio@gmail.com">Email</a>
-    <a href="telto:35512025">Tel:</a>
-               </p>
-           </article>
-       </section>
-       <!-- rodape de parte da pagina ou de toda a pagina-->
-       <footer></footer>
+
+<head>
+    <meta charset="utf-8">
+    <!--Aba do navegador-->
+    <title>Guilherme Augusto Gonçalves Poscidônio</title>
+    <!--diz ao navegador qual o tipo arquivo estamos adicioando e o caminho para nosso css-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Cabeçario da pagina ou po caeçario de parte dela-->
+    <header>
+        <!-- iserindo uma imagem que esta direto no projeto pode ser susbstituido pro um local na maquina ou ate mesmo um link
+        utilizado tambem uma legenda para imagem caso ela nao carregue ou nao exita em um determinado momento pode se utilizado
+         tambem por leitores de tela-->
+        <img src="perfil_guilherme.jpg" alt="Foto do perfil Guilherme Augusto">
+        <!-- usado para titulos nas paginas-->
+        <h1 id="title">Guilherme Augusto Gonçalves Poscidônio</h1>
+    </header>
+    <!--seção generica de conteudo como listas por exemplo-->
+    <section>
+        <header>
+            <h2 class="subtitle">Posts</h2>
+        </header>
+        <!-- conteudo relevante da sua pagina-->
+        <article class="post">
+            <h3 class="post_title">Post #1</h3>
+            <img src="post.jpg" alt="Post de perfil contendo um setup">
+            <!--Paragrafo, textos densos, imagens, videos-->
+            <p>
+                A área de exatas sempre me cativou, ao realizar um curso em Delphi no ensino médio me deparei com o
+                desenvolvimento de software, que me despertou o brilho nos olhos. Logo após iniciei meus estudos como
+                bacharel em ciência da computação, juntamente com o técnico em informática.
+                Realizei quatro estágios, sendo eles dois obrigatórios e dois não obrigatórios, todos me agregaram muito
+                conhecimento, cada um com suas peculiaridades, porém todos voltados para área de manutenção/suporte de
+                software, hardware e atendimento ao cliente.
+                Recebi uma oportunidade de trabalhar na instituição na qual me encontro até o momento, mesmo não sendo
+                minha área de formação me dediquei a todos os cargos pelo qual passei dentro da empresa, com a
+                realização de cursos, uma pós-graduação, sempre executei minhas funções, como acréscimo mesmo não sendo
+                solicitado, auxiliava o setor de suporte TI, não perdendo assim meu vínculo com o setor.
+                Após cinco anos e sete meses recebi a oportunidade tão aguardada, ingressar na minha área de formação,
+                mesmo não tendo experiência e com uma evasão muito significativa de colaboradores do setor aceitei este
+                desafio e hoje cada vez mais engajado, estou buscando estudar para continuar agregando e trazendo cada
+                vez mais resultados para empresa, consequentemente para minha carreira profissional.
+            </p>
+        </article>
+    </section>
+    <!-- rodape de parte da pagina ou de toda a pagina-->
+    <footer>
+        <!--representa uma lista no qual sua ordem nao tem relevancia ou tambem uma lista nao ordenada-->
+        <ul>
+            <!--<li> é o item da lista-->
+            <li>
+                <!-- <a> utilizado como ancora para o quel vai ser apontado a referencia e o target _blank para abir em uma nova guia no navegador-->
+                <!-- mailto para email e quando clicar abre o app configurado na maquina de email ou o navegar o mesmo para telefone porem utiliza o telto-->
+                <a href="mailto:guilhermeposcidonio@gmail.com">Email</a>
+            </li>
+            <li>
+                <a href="tel:35991301472">Telefone:</a>
+            </li>
+            <li>
+               <a href="https://www.linkedin.com/in/guilhermeposcidonio/" target="_blank">LINKEDIN</a>
+            </li>
+            <li>
+                <a href="https://github.com/Poscidonio" target="_blank">GitHub</a>
+            </li>
+        </ul>
+    </footer>
 
 
-    </body>
+</body>
+
 </html>
