@@ -1,21 +1,36 @@
 body {
-    background: #ccc;
+    background: #f7f7f7;
+    font-family: Verdana;
 }
 /*# representa o id que só pode ser usado um por pagina, o ponto no inicio representa uma classe*/
 #title, .subtitle, .post_title{
-    color: blue;
+    color: #505050;
+}
+#title {
+    font-size: 40px;
+    text-transform: uppercase;
 }
 
+a {
+    text-decoration: line-through;
+    color: #505050;
+}
+
+/*Altera o titulo do texto*/
 .post_title{
     font-size: 16px;
     font-style: italic;
+    margin: 0;
+    margin-bottom: 15px;
 }
 
-/*Altera o tamanho de todas as imagens*/
-img {
+/*Altera o tamanho da image, do perfil e estilo*/
+.post_profile {
     width: 100px;
     height: 100px;
     object-fit: cover;
+    border: 1px solid #505050;
+    border-radius: 50px;
   }
 
 .post {
@@ -24,7 +39,34 @@ img {
     /*espaçamento entre o conteudo e a borda*/
     padding: 10px;
     /*borda ppx é a largura, solida e cor preto*/
-    border: 3px solid #000;
+    border: 3px solid #505050;
     /*Espaçamento entre elementos*/
-    margin: 10px;
+    margin-bottom: 15px;
+}
+
+.post_content {
+    margin: 0;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+/*Altera a imagem do acima do texto*/
+.post_image {
+    margin-bottom: 15px;
+    width: 1080px;
+    height: 315px;
+    object-fit: cover;
+}
+
+/*Altera a lista para retirar os marcadores da lista e espacamento*/
+.contacts_list {
+    list-style-type: none;
+    padding-left: 15px;
+}
+
+/* Altera a ancora no caso p <a> somente dentro da lista*/
+.contacts_list li a {
+    color: blue;
+    text-decoration: none;
 }
