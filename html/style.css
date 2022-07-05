@@ -1,6 +1,10 @@
 body {
     background: #f7f7f7;
     font-family: Verdana;
+    /*delemita o tamanho da largura do body*/
+    max-width: 900px;
+    /*Cria um espaçamento de amabos os lados automaticamente*/
+    margin: auto;
 }
 /*# representa o id que só pode ser usado um por pagina, o ponto no inicio representa uma classe*/
 #title, .subtitle, .post_title{
@@ -49,6 +53,7 @@ a {
     margin-bottom: 15px;
     border-radius: 5px;
     text-transform: capitalize;
+    text-align: justify;
 }
 
 /*Altera a imagem do acima do texto*/
@@ -57,6 +62,9 @@ a {
     width: 1080px;
     height: 315px;
     object-fit: cover;
+    /*como no body esta declarado a largura como 900px a imagem vaza por ser maior colocando a largura 
+    da imagem com 100% ela respeitara o que vier antes dela limitando a imagem*/
+    width: 100%;
 }
 
 /*Altera a lista para retirar os marcadores da lista e espacamento*/
