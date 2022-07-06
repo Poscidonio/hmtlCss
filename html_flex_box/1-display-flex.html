@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Flex direction</title>
+<style>
+    /*Inicializando um container flex*/
+    .flex-container {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style: none;
+    }
+/*Editando os itens*/
+    .flex-item {
+        background: blue;
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        margin: 5px;
+    }
+/*Itens em linha */
+    .row {
+        flex-direction: row;
+    }
+/*Itens em linha porem invertidos*/
+    .row-reverse {
+        flex-direction: row-reverse;
+    }
+/*Basicamnete estamos atribuindo um comportamento espefico dentro do <li> sobrepondo o anterior*/
+    .row-reverse li {
+        background-color: red;
+    }
+/*Itens em colunas e do lado esquerdo*/
+    .column {
+        float: left;
+        flex-direction: column;
+    }
+/*Basicamnete estamos atribuindo um comportamento espefico dentro do <li> sobrepondo o anterior*/
+    .column li {
+        background-color: orange;
+    }
+/*Colunas com os item invertidos e do lado direito*/
+    .column-reverse {
+        float: right;
+        flex-direction: column-reverse;
+    }
+/*Basicamnete estamos atribuindo um comportamento espefico dentro do <li> sobrepondo o anterior*/
+    .column-reverse li {
+        background-color: purple;
+    }
+/*Obs. Como podemos observar a classe .row-reverse li{} nao afeta o layout da tag <a> ficando como foi estabelecido
+inicialmente.*/
+</style>
+</head>
+<body>
+    <ul class="flex-container row">
+        <li class="flex-item">1</li>
+        <li class="flex-item">2</li>
+        <li class="flex-item">3</li>
+        <li class="flex-item">4</li>
+        <li class="flex-item">5</li>
+        <a class="flex-item">A</a>
+        <a class="flex-item">B</a>
+        <a class="flex-item">C</a>
+    </ul>
+
+        <ul class="flex-container row-reverse">
+            <li class="flex-item">1</li>
+            <li class="flex-item">2</li>
+            <li class="flex-item">3</li>
+            <li class="flex-item">4</li>
+            <li class="flex-item">5</li>
+            <a class="flex-item">A</a>
+            <a class="flex-item">B</a>
+            <a class="flex-item">C</a>
+        </ul>
+
+            <ul class="flex-container column">
+                <li class="flex-item">1</li>
+                <li class="flex-item">2</li>
+                <li class="flex-item">3</li>
+                <li class="flex-item">4</li>
+                <li class="flex-item">5</li>
+                <a class="flex-item">A</a>
+                <a class="flex-item">B</a>
+                <a class="flex-item">C</a>
+            </ul>
+
+                <ul class="flex-container column-reverse">
+                    <li class="flex-item">1</li>
+                    <li class="flex-item">2</li>
+                    <li class="flex-item">3</li>
+                    <li class="flex-item">4</li>
+                    <li class="flex-item">5</li>
+                    <a class="flex-item">A</a>
+                    <a class="flex-item">B</a>
+                    <a class="flex-item">C</a>
+                </ul>
+</body>
+</html>
